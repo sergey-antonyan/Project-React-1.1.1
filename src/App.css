@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Alegreya', serif;
+  
+}
+
+.header{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F1F1F1;
+}
+
+.topdiv{
+  width: 100%;
+  background-color: black;
+  height: 38px;
+}
+
+.topdiv p {
+  color:rgb(246, 246, 246, 0.7);
+  text-align: center;
+  padding-top: 10px;
+  font-size: small;
+  word-spacing: 2px;
+}
+
+.zamb{
+  display: flex;
+  justify-content: space-between;
+}
+
+.zamb .acc{
+  margin-right: 10px;
+}
+
+.zamb  h3{
+  margin-left: 5px;
+}
+
+.logoimg2{
+  width: 200px;
+  margin-left: 30px
+}
+
+
+.navbar{
+  display: flex;
+
+}
+
+.list{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 5px;
+}
+
+.list a {
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.list a:hover {
+  transform: scale(1.2);
+  color: #333;
+  background-color: #F1F1F1;
+  text-decoration:dotted;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.search-container button {
+  background-color: #eee;
+  color: #444;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search-container button i {
+  color: #fff;
+}
+
+.search-container button:hover {
+  background-color: #ccc;
+}
+
+.starthome{
+  width: 100%;
+  height: 500px;
+  background-image: url(./img/bgimg.jpg);
+  text-align: center;
+  color: #FFFFF0;
+  padding-top: 250px ;
+  letter-spacing: 0.2cm;
+}
+
+.footercontainer{
+  background-color: #F1F1F1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  height: 290px;
+  justify-content: center;
+  padding: 30px 0 50px 60px;
+}
+
+.joo{
+  position: absolute;
+  margin-left: 190px;
+  margin-bottom: 30px;
+  background-color: #F1F1F1;
+}
+
+.yollo{
+  position:absolute;
+  margin-top: 1140px;
+  width: 60px;
+  margin-left: 93%;
+  position: fixed;
+  transition: box-shadow 0,3s ease-in-out;
+  cursor: pointer;;
+}
+
+.yollo:hover{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
