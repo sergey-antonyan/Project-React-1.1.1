@@ -9,9 +9,9 @@ import Home from './Header/Home';
 import Shop from './Header/Shop';
 import Footer from './Footer';
 import TheBrand  from './Header/Thebrand';
-import './Header/Shop.css'
+import './Header/Shop.css';
 import Productinfo from './Productinfo';
-
+import './productinfo.css';
 
 
 
@@ -28,12 +28,12 @@ import Productinfo from './Productinfo';
       <Header sec = {Logo1} icon = {Logo} />
       
       <Routes>
-      <Route path='/products/' element={<Productinfo/>} /> 
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<TheBrand />} />
-      <Route path="/shop" element={<Shop />} />
-      <Route path="/blog" element={<Blog />} />
-      </Routes>
+          <Route path='/products/:productId' element={<Productinfo/>} /> 
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<TheBrand />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/blog" element={<Blog />} />
+          </Routes>
       <Footer/>
     </div>
   );

@@ -1,28 +1,47 @@
 import React from 'react'
 import products from './Data'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 
 export default function Productinfo() {
 
   const {productId} = useParams();
-  const product = products.find((product) => product.id === productId);
+  const product = products.find((product) => product.id == productId);
   const {name, url, price } = product
 
   return (
-    <div>
-      <div >
-        <h3>Suits</h3>
-              <div>
-                    <div>
-                        <img src = {url}/>
+    <>
+      
+       <Link to={'/shop'}> <p> Back to Shop</p></Link>  <h3 className='cname'>Suit Jacket</h3>
+              <div className='prodinfo'>
+                    <div className='prodinfo1'>
+                        <img src ={"/" + url}/>
                     </div>
-                    <div>
+                    <div className='prodinfo2'>
                         <p>{name}</p>
-                        <h6>{price}</h6>
+                        <br/><br/>
+                        <h4>£{price}</h4>
+                        <hr/>
+                        <h3>Color</h3>
+                        <button className='btncolor one'></button>
+                        <button className='btncolor two'></button>
+                        <button className='btncolor three'></button>
+                        <button className='btncolor four'></button>
+                        <br/>
+                        <h3>Jacet Size</h3>
+                        <div className='prodinfobtn'>
+                            <button>36 (EU 46)</button>
+                            <button>38 (EU 48)</button>    
+                            <button>40 (EU 50)</button>    
+                            <button>42 (EU 52)</button>    
+                            <button>44 (EU 54)</button>    
+                            <button>46 (EU 56)</button>    
+                            <button>48 (EU 58)</button>    
+                        </div>
+                       <button className="buybtn"></button> 
                     </div> 
-              </div>    
-      </div>
-    </div>
+              </div> 
+    </>
   )
 }
+

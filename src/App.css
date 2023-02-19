@@ -37,6 +37,7 @@
 
 .zamb .acc{
   margin-right: 10px;
+
 }
 
 .zamb  h3{
@@ -122,6 +123,24 @@
   letter-spacing: 0.2cm;
 }
 
+.homeall{ 
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+text-align: center;
+height: 200px;
+padding-top: 4%;
+}
+
+
+.homeall .icc{
+  width: 60px;
+  cursor: pointer;
+}
+
+.homeall p{
+  font-size: 0.8em;
+}
+
 .footercontainer{
   background-color: #F1F1F1;
   display: grid;
@@ -153,3 +172,32 @@
 .yollo:hover{
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
+
+.homeshop{
+  color:  #FFFFF0;
+  width: 60px;
+}
+
+
+/* TheBrand */
+
+.brandcontainer{
+  text-align: center;
+  margin: 10px 320px 10px 320px;
+}
+
+.brandcontainer img{
+  width: 500px;
+  height: 400px;
+}
+
+.brandcontainer .titlep{
+  font-size: 1.8rem;
+  margin-top: 10px;;
+}
+
+.brandcontainer p{
+  margin-bottom: 10px;
+  
+}
+

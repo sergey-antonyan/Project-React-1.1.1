@@ -18,6 +18,17 @@
   
 }
 
+.products p{
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.products p:hover{
+  color: #94abc1;
+  
+}
+
 .photo {
   justify-content: center;
   text-align: center;
