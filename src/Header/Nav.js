@@ -23,7 +23,7 @@ export default function Nav() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">The Brand</Link></li>
           <li><Link to="/shop">Shop</Link></li>
-           <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
         </ul>
       </nav>
     </div>

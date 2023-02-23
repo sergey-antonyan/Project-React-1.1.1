@@ -44,6 +44,8 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+
+
 .prodinfobtn button{
   background-color: white;
   height: 45px;
