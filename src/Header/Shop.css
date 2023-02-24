@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 80px;
 }
 
 .products{
@@ -17,6 +18,7 @@
   box-shadow: 0 2px 2px rgba(0,0,0,0.1);
   
 }
+
 
 .products p{
   color: black;
@@ -39,4 +41,11 @@
 
 .photo:hover{
   opacity: 0.7;
+}
+
+.srrch{
+  position: absolute;
+  top: 200px;
+  margin-left: 44%;
+  
 }

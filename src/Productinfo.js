@@ -10,9 +10,8 @@ export default function Productinfo(props) {
   return (
     <>
       <Link to={"/shop"}>
-        {" "}
         <p> Back to Shop</p>
-      </Link>{" "}
+      </Link>
       <h3 className="cname">Suit Jacket</h3>
       <div className="prodinfo">
         <div className="prodinfo1">
