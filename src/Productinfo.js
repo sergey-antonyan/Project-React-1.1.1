@@ -1,11 +1,23 @@
-import React from "react";
-import products from "./Data";
+import React, {useState, useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 
+
+
 export default function Productinfo(props) {
+
   const { productId } = useParams();
-  const product = products.find((product) => product.id == productId);
-  const { name, url, price } = product;
+  
+  const [productInfo, setProductInfo] = useState({})
+
+  useEffect (() => {
+  fetch(`http://localhost:3005/shop/${productId}`)
+  .then(res => res.json())
+  .then(data => setProductInfo(data))
+}, [])
+
+  
+  // const product = products.find((product) => product.id == productId);
+  // const { name, url, price } = product;
 
   return (
     <>
@@ -15,13 +27,13 @@ export default function Productinfo(props) {
       <h3 className="cname">Suit Jacket</h3>
       <div className="prodinfo">
         <div className="prodinfo1">
-          <img src={"/" + url} />
+          <img src={productInfo.image} />
         </div>
         <div className="prodinfo2">
-          <p>{name}</p>
+          <p>{productInfo.name}</p>
           <br />
           <br />
-          <h4>£{price}</h4>
+          <h4>£{productInfo.price}</h4>
           <hr />
           <h3>Color</h3>
           <button className="btncolor one"></button>
@@ -45,3 +57,8 @@ export default function Productinfo(props) {
     </>
   );
 }
+
+
+
+
+

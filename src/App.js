@@ -31,12 +31,12 @@ function App() {
 
       <Routes>
         <Route
-          path="/products/:productId"
+          path="/shop/:productId"
           element={<Productinfo ooo={add} />}
         />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<TheBrand />} />
-        <Route path="/products/card" element={<Card />} />
+        <Route path="/shop/card" element={<Card />} />
         <Route path="/shop" element={<Shop lll={add} />} />
       </Routes>
       <Footer />
